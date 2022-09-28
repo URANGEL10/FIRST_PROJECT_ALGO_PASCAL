@@ -1,0 +1,33 @@
+Algorithme Assurances Maladie
+
+Variables 
+ distinctions:chaine 
+score :entier 
+
+Début 
+
+ Ecrire (" veuillez indiquez votre age ")
+   lire (age)
+
+ REPETER  
+  Ecrire (" veuillez indiquez votre age ")
+   lire (age)
+
+ Jusqu à age › 24 
+ Finrepeter 
+
+  si 24› age › 28 alors 
+    ecrire (" VOUS ETES ELIGIBLE  ")
+ Sinon 
+   si  35‹age ‹29 ALORS 
+     ecrire (" VOUS ELIGIBLE AVEC une prime de risque nommé Lambda")
+   SINON 
+      si  45‹age ‹36 ALORS
+        ecrire (" VOUS ETE ELIGIBLE AVEC une prime de risque dénommé Teta ")
+SINON 
+ecrire (" VOUS N ETE PAS ELIGIBLE")
+FINSI
+
+
+
+Fin
