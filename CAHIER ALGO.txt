@@ -1,31 +1,29 @@
-Algorithme Assurances Maladie
+Algorithme impot 
 
 Variables 
- distinctions:chaine 
-score :entier 
+ genre :chaine 
+age :entier 
 
 Début 
 
- Ecrire (" veuillez indiquez votre age ")
+ Ecrire (" veuillez indiquez votre genre  et votre age ")
+   Lire (genre)
    lire (age)
 
  REPETER  
-  Ecrire (" veuillez indiquez votre age ")
+  Ecrire (" veuillez indiquez votre genre  et votre age ")
+   Lire (genre)
    lire (age)
-
- Jusqu à age › 24 
+ Jusqu à genre ← homme OU genre ← femme ET age › 0 
  Finrepeter 
 
-  si 24› age › 28 alors 
-    ecrire (" VOUS ETES ELIGIBLE  ")
+  si genre ← homme  ET age › 18 alors 
+    ecrire (" VOUS PAYEZ L IMPOT ")
  Sinon 
-   si  35‹age ‹29 ALORS 
-     ecrire (" VOUS ELIGIBLE AVEC une prime de risque nommé Lambda")
+   si genre ← femme ET 35‹age ‹18 ALORS 
+     ecrire (" VOUS PAYEZ L IMPOT ")
    SINON 
-      si  45‹age ‹36 ALORS
-        ecrire (" VOUS ETE ELIGIBLE AVEC une prime de risque dénommé Teta ")
-SINON 
-ecrire (" VOUS N ETE PAS ELIGIBLE")
+     ecrire (" VOUS NE PAYEZ PAS L IMPOT ")
 FINSI
 
 
